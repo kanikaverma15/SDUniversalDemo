@@ -6,6 +6,6 @@ namespace SDUniversalDemo.API
 {
    public  class APIFactory
     {
-        public static string domain = "http://maps.googleapis.com/maps/api/geocode/json?address=salhawas&sensor=false&region=aud";//Live server
+        public static  string domain = "http://maps.googleapis.com/maps/api/geocode/json?address=salhawas&sensor=false&region=aud";//Live server
     }
 }

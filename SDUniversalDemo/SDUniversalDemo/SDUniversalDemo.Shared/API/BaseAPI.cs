@@ -11,7 +11,7 @@ namespace SDUniversalDemo.API
     {
 
 
-        public static async Task<string> GetAsync(string url)
+        public static async Task<string>  GetAsync(string url)
         {
             string content = string.Empty;
             HttpClient httpClient = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate }) { Timeout = TimeSpan.FromSeconds(60) };
