@@ -1,1 +1,1 @@
-C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\SDUniversalDemo.Windows.csproj;neutral
+C:\Users\verma.kanika\Documents\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\SDUniversalDemo.Windows.csproj;neutral
