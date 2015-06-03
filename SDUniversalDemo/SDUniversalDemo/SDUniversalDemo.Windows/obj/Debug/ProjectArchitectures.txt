@@ -1,1 +1,1 @@
-D:\Projects\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\SDUniversalDemo.Windows.csproj;neutral
+C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\SDUniversalDemo.Windows.csproj;neutral

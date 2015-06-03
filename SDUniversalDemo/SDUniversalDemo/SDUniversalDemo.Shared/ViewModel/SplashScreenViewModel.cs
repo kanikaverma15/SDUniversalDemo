@@ -1,5 +1,4 @@
-﻿using SDUniversalDemo.Common.NavigationHelper;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
@@ -16,6 +15,7 @@ namespace SDUniversalDemo.ViewModel
         }
         private void sizeOfImage()
         {
+
             //double scaleFactor = Windows.Graphics.Display.DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
         }
     }

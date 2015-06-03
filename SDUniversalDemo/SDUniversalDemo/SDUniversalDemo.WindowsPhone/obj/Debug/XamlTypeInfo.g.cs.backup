@@ -124,15 +124,29 @@ namespace SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[10];
             _typeNameTable[0] = "SDUniversalDemo.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "SDUniversalDemo.Controls.ProgressRing";
+            _typeNameTable[4] = "Windows.UI.Xaml.Controls.Control";
+            _typeNameTable[5] = "Boolean";
+            _typeNameTable[6] = "SDUniversalDemo.Controls.ProgressRing.TemplateSettingValues";
+            _typeNameTable[7] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[8] = "SDUniversalDemo.Views.SplashScreen.CustomLoader";
+            _typeNameTable[9] = "SDUniversalDemo.Views.SplashScreen.SplashScreenView";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[10];
             _typeTable[0] = typeof(global::SDUniversalDemo.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::SDUniversalDemo.Controls.ProgressRing);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Control);
+            _typeTable[5] = typeof(global::System.Boolean);
+            _typeTable[6] = typeof(global::SDUniversalDemo.Controls.ProgressRing.TemplateSettingValues);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[8] = typeof(global::SDUniversalDemo.Views.SplashScreen.CustomLoader);
+            _typeTable[9] = typeof(global::SDUniversalDemo.Views.SplashScreen.SplashScreenView);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -168,6 +182,9 @@ namespace SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::SDUniversalDemo.MainPage(); }
+        private object Activate_3_ProgressRing() { return new global::SDUniversalDemo.Controls.ProgressRing(); }
+        private object Activate_8_CustomLoader() { return new global::SDUniversalDemo.Views.SplashScreen.CustomLoader(); }
+        private object Activate_9_SplashScreenView() { return new global::SDUniversalDemo.Views.SplashScreen.SplashScreenView(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -193,16 +210,96 @@ namespace SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 3:   //  SDUniversalDemo.Controls.ProgressRing
+                userType = new global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_3_ProgressRing;
+                userType.AddMemberName("IsActive");
+                userType.AddMemberName("TemplateSettings");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Windows.UI.Xaml.Controls.Control
+                xamlType = new global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  Boolean
+                xamlType = new global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  SDUniversalDemo.Controls.ProgressRing.TemplateSettingValues
+                userType = new global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 7:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  SDUniversalDemo.Views.SplashScreen.CustomLoader
+                userType = new global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_CustomLoader;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  SDUniversalDemo.Views.SplashScreen.SplashScreenView
+                userType = new global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_SplashScreenView;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
             }
             return xamlType;
         }
 
 
+        private object get_0_ProgressRing_IsActive(object instance)
+        {
+            var that = (global::SDUniversalDemo.Controls.ProgressRing)instance;
+            return that.IsActive;
+        }
+        private void set_0_ProgressRing_IsActive(object instance, object Value)
+        {
+            var that = (global::SDUniversalDemo.Controls.ProgressRing)instance;
+            that.IsActive = (global::System.Boolean)Value;
+        }
+        private object get_1_ProgressRing_TemplateSettings(object instance)
+        {
+            var that = (global::SDUniversalDemo.Controls.ProgressRing)instance;
+            return that.TemplateSettings;
+        }
+        private void set_1_ProgressRing_TemplateSettings(object instance, object Value)
+        {
+            var that = (global::SDUniversalDemo.Controls.ProgressRing)instance;
+            that.TemplateSettings = (global::SDUniversalDemo.Controls.ProgressRing.TemplateSettingValues)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "SDUniversalDemo.Controls.ProgressRing.IsActive":
+                userType = (global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SDUniversalDemo.Controls.ProgressRing");
+                xamlMember = new global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlMember(this, "IsActive", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_0_ProgressRing_IsActive;
+                xamlMember.Setter = set_0_ProgressRing_IsActive;
+                break;
+            case "SDUniversalDemo.Controls.ProgressRing.TemplateSettings":
+                userType = (global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SDUniversalDemo.Controls.ProgressRing");
+                xamlMember = new global::SDUniversalDemo.SDUniversalDemo_WindowsPhone_XamlTypeInfo.XamlMember(this, "TemplateSettings", "SDUniversalDemo.Controls.ProgressRing.TemplateSettingValues");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_1_ProgressRing_TemplateSettings;
+                xamlMember.Setter = set_1_ProgressRing_TemplateSettings;
+                break;
+            }
             return xamlMember;
         }
     }

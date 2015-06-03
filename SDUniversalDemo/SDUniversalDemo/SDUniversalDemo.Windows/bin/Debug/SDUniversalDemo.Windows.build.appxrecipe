@@ -7,44 +7,47 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>1f431a52-be78-4933-bff0-af691eb75e9e</PackageIdentityName>
-    <IntermediateOutputPath>D:\Projects\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Projects\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Projects\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\SDUniversalDemo.Windows.exe">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\SDUniversalDemo.Windows.exe">
       <PackagePath>SDUniversalDemo.Windows.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\Assets\Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\Assets\SmallLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\SDUniversalDemo.Windows.xr.xml">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\Views\SplashScreen\SplashScreenView.xbf">
+      <PackagePath>Views\SplashScreen\SplashScreenView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\SDUniversalDemo.Windows.xr.xml">
       <PackagePath>SDUniversalDemo.Windows.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Projects\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

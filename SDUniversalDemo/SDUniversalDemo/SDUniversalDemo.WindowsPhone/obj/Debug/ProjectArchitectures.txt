@@ -1,1 +1,1 @@
-C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\SDUniversalDemo.WindowsPhone.csproj;neutral
+C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\SDUniversalDemo.WindowsPhone.csproj;neutral

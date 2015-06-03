@@ -10,5 +10,6 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="SDUniversalDemo.MainPage" />
+    <RootType FullName="SDUniversalDemo.Views.SplashScreen.SplashScreenView" />
   </Roots.RootTypes>
 </Roots>

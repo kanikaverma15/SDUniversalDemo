@@ -1,58 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>L-7KRQ542</Machine>
-    <WindowsUser>verma.kanika</WindowsUser>
+    <Machine>LETSGOMO</Machine>
+    <WindowsUser>letsgomollp</WindowsUser>
     <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>692edc2c-052e-4cc0-996b-e97fb56d6350</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\SDUniversalDemo.WindowsPhone.exe">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\SDUniversalDemo.WindowsPhone.exe">
       <PackagePath>SDUniversalDemo.WindowsPhone.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\Splash\Icons_electronics.png">
+      <PackagePath>Assets\Splash\Icons_electronics.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\Splash\Icons_Home-need.png">
+      <PackagePath>Assets\Splash\Icons_Home-need.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\Splash\Icons_style.png">
+      <PackagePath>Assets\Splash\Icons_style.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\SDUniversalDemo.WindowsPhone.xr.xml">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\Views\SplashScreen\CustomLoader.xbf">
+      <PackagePath>Views\SplashScreen\CustomLoader.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\Views\SplashScreen\SplashScreenView.xbf">
+      <PackagePath>Views\SplashScreen\SplashScreenView.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\SDUniversalDemo.WindowsPhone.xr.xml">
       <PackagePath>SDUniversalDemo.WindowsPhone.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\verma.kanika\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\letsgomollp\Desktop\SDUniversalDemo\SDUniversalDemo\SDUniversalDemo.WindowsPhone\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
