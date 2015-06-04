@@ -14,16 +14,22 @@
     </ApplicationDefinition>
     <Compile Include="$(MSBuildThisFileDirectory)API\APIFactory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)API\BaseAPI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)API\JsonParser.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DelegateHelper\DelegateCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\DelegateHelper\Guard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\GlobalVariables.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Common\NavigationHelper\NavigationService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\TemplateSelector\HomeTemplateSelector\HomePivotTemplateSelector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\TemplateSelector\TemplateSelector.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Banners\HomePageBannersModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\BaseDataModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\HomePageStructureModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\BaseViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomePageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SplashScreenViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
   </ItemGroup>
 </Project>

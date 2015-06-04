@@ -1,0 +1,144 @@
+﻿<Page
+    x:Class="SDUniversalDemo.Views.HomeView.HomePageView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SDUniversalDemo.Views.HomeView"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding HomePageVM, Source={StaticResource Locator}}"
+    xmlns:toolkit="using:WinRTXamlToolkit.Controls"
+    xmlns:i="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:helper="using:SDUniversalDemo.Common.TemplateSelector.HomeTemplateSelector"
+    Background="White"
+    Name="HomePageRoot">
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="/Assets/logo.jpg" HorizontalAlignment="Left" Height="50" Margin="10"/>
+
+            <Pivot Name="mainPivot" Grid.Row="1"  Margin="0,-60,0,0">
+                <Pivot.ItemContainerStyle>
+                    <Style TargetType="PivotItem">
+                        <Setter Property="Margin" Value="10,15,10,0"/>
+                    </Style>
+                </Pivot.ItemContainerStyle>
+                <Pivot.HeaderTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" FontSize="60"
+                                   Margin="0,0,0,-20"/>
+                    </DataTemplate>
+                </Pivot.HeaderTemplate>
+                <PivotItem Header="explore">
+                    <ScrollViewer DataContext="{Binding DataContext, ElementName=HomePageRoot}">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <StackPanel Grid.Row="0">
+                                <FlipView x:Name="HomeBanner"  Height="150" ItemsSource="{Binding Banners}">
+                                    <FlipView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <Image Stretch="UniformToFill" Source="{Binding imagePath}">
+                                                    <i:Interaction.Behaviors>
+                                                        <core:EventTriggerBehavior EventName="Tapped">
+                                                            <core:InvokeCommandAction Command="{Binding DataContext.HomeItemTapCommand,ElementName=HomePageRoot}" CommandParameter="{Binding}"/>
+                                                        </core:EventTriggerBehavior>
+                                                    </i:Interaction.Behaviors>
+                                                </Image>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </FlipView.ItemTemplate>
+                                    <i:Interaction.Behaviors>
+                                        <core:EventTriggerBehavior EventName="SelectionChanged">
+                                            <core:InvokeCommandAction Command="{Binding DataContext.FipViewSelectionChangedCommand,ElementName=HomePageRoot}"  CommandParameter="{Binding ElementName=HomeBanner, Path=SelectedIndex}"/>
+                                        </core:EventTriggerBehavior>
+                                    </i:Interaction.Behaviors>
+                                </FlipView>
+                                <StackPanel Height="15" HorizontalAlignment="Center" Margin="0,-20,0,5"  ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" >
+                                    <ItemsControl ItemsSource="{Binding CircleBinding}">
+                                        <ItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <StackPanel Orientation="Horizontal"/>
+                                            </ItemsPanelTemplate>
+                                        </ItemsControl.ItemsPanel>
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <Image Source="{Binding}" Width="15"/>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <Grid Grid.Row="1">
+                                <ListView ItemsSource="{Binding HomeData.home_segment.indexProductList,Mode=TwoWay}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                                    <ListView.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <toolkit:WrapPanel FlowDirection="LeftToRight"/>
+                                        </ItemsPanelTemplate>
+                                    </ListView.ItemsPanel>
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Width="{Binding DataContext.HomeListWidth,ElementName=HomePageRoot}" >
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                    <RowDefinition Height="Auto"/>
+                                                </Grid.RowDefinitions>
+                                                <Image Grid.Row="0" Source="{Binding src}" Stretch="Fill" Margin="1.5">
+                                                    <i:Interaction.Behaviors>
+                                                        <core:EventTriggerBehavior EventName="Tapped">
+                                                            <core:InvokeCommandAction Command="{Binding DataContext.HomeItemTapCommand,ElementName=HomePageRoot}" CommandParameter="{Binding}"/>
+                                                        </core:EventTriggerBehavior>
+                                                    </i:Interaction.Behaviors>
+                                                </Image>
+
+                                                <TextBlock Grid.Row="1" Text="{Binding alt}" Foreground="Black" FontSize="25" HorizontalAlignment="Center"/>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </Grid>
+
+                            <Grid Grid.Row="2" Margin="0,10">
+                                <ListView ItemsSource="{Binding HomeData.home_segment.topProductList,Mode=TwoWay}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                                    <ListView.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <toolkit:WrapPanel FlowDirection="LeftToRight"/>
+                                        </ItemsPanelTemplate>
+                                    </ListView.ItemsPanel>
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid>
+                                                <Image Source="{Binding src}" Stretch="Fill" Margin="1.5">
+                                                    <i:Interaction.Behaviors>
+                                                        <core:EventTriggerBehavior EventName="Tapped">
+                                                            <core:InvokeCommandAction Command="{Binding DataContext.HomeItemTapCommand,ElementName=HomePageRoot}" CommandParameter="{Binding}"/>
+                                                        </core:EventTriggerBehavior>
+                                                    </i:Interaction.Behaviors>
+                                                </Image>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListView.ItemTemplate>
+                                </ListView>
+                            </Grid>
+
+                        </Grid>
+                    </ScrollViewer>
+                </PivotItem>
+            </Pivot>
+
+
+        </Grid>
+        </Grid>
+</Page>

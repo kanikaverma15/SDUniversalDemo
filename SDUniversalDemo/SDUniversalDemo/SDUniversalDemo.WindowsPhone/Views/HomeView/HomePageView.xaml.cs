@@ -16,20 +16,16 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
-namespace SDUniversalDemo.Views.SplashScreen
+namespace SDUniversalDemo.Views.HomeView
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SplashScreenView : Page
+    public sealed partial class HomePageView : Page
     {
-        public SplashScreenView()
+        public HomePageView()
         {
             this.InitializeComponent();
-            CustomLoader cl = new CustomLoader();
-            cl.Height = 100;
-            cl.Width = 100;
-            this.LayoutRoot.Children.Add(cl);
         }
 
         /// <summary>
@@ -39,6 +35,11 @@ namespace SDUniversalDemo.Views.SplashScreen
         /// This parameter is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            //var a = e.Parameter.ToString();
+            //if (!string.IsNullOrEmpty(a))
+            //{
+            //    mainPivot.SelectedIndex = Convert.ToInt32(a);
+            //}
         }
     }
 }

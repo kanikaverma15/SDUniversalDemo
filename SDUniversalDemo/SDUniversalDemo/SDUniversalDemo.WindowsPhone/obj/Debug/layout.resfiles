@@ -1,3 +1,5 @@
+Assets\Banner\NonSelectedItem.png
+Assets\Banner\SelectedItem.png
 Assets\Logo.scale-240.png
 Assets\SmallLogo.scale-240.png
 Assets\Splash\Icons_electronics.png
@@ -10,5 +12,6 @@ Assets\WideLogo.scale-240.png
 App.xbf
 MainPage.xbf
 SDUniversalDemo.WindowsPhone.xr.xml
+Views\HomeView\HomePageView.xbf
 Views\SplashScreen\CustomLoader.xbf
 Views\SplashScreen\SplashScreenView.xbf

@@ -48,5 +48,19 @@ namespace SDUniversalDemo.ViewModel
             }
         }
 
+        public SplashScreenViewModel SplashVM
+        {
+            get
+            {
+                var value = GetViewModelFromDictionary<SplashScreenViewModel>();
+                if (value == null)
+                {
+                    value = new SplashScreenViewModel();
+                    _vmStore.Add(Guid.NewGuid().ToString(), value);
+                }
+                return value;
+            }
+        }
+
     }
 }
