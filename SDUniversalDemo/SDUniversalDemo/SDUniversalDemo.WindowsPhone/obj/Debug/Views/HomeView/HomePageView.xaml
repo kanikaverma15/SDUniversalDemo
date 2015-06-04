@@ -82,7 +82,7 @@
                             </StackPanel>
 
                             <Grid Grid.Row="1">
-                                <ListView ItemsSource="{Binding BucketData,Mode=TwoWay}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                                <ListView ItemsSource="{Binding HomeData.home_segment.indexProductList,Mode=TwoWay}" ScrollViewer.VerticalScrollBarVisibility="Disabled">
                                     <ListView.ItemsPanel>
                                         <ItemsPanelTemplate>
                                             <toolkit:WrapPanel FlowDirection="LeftToRight"/>
@@ -142,3 +142,4 @@
         </Grid>
         </Grid>
 </Page>
+

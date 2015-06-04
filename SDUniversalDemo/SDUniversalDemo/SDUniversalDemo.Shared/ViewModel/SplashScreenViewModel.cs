@@ -129,7 +129,7 @@ namespace SDUniversalDemo.ViewModel
                 var obj = JsonParser.ObjectDeserializer<HomePageStructureModel>(response);
                 if (obj != null)
                 {
-                    //GlobalVariables.HomePageBucket = obj.buckets;
+                    GlobalVariables.HomePageBucket = obj.buckets;
                 }
             }
             catch (Exception ex)

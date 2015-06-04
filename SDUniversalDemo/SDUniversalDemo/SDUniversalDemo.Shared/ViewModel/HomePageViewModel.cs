@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using SDUniversalDemo.Common;
+using SDUniversalDemo.Model;
 using SDUniversalDemo.Model.Banners;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,16 @@ namespace SDUniversalDemo.ViewModel
             GetBannersData();
         }
 
+        private Bucket _bucketData;
+        public Bucket BucketData
+        {
+            get { return _bucketData; }
+            set
+            {
+                _bucketData = value;
+                NotifyPropertyChanged("BucketData");
+            }
+        }
         #region HomeBanners
         private ObservableCollection<object> _banners;
         public ObservableCollection<object> Banners { 
@@ -163,10 +174,11 @@ namespace SDUniversalDemo.ViewModel
         }
         #endregion
 
-        #region GET BANNERS DATA
+        #region GET DATA
        private void GetBannersData()
        {
            Banners = GlobalVariables.BannerData;
+           BucketData = GlobalVariables.HomePageBucket;
            DefaultCircle();
        }
         #endregion
